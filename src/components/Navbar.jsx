@@ -7,11 +7,23 @@ const Navbar = () => {
         <img src="/logo.png" alt="logo" className="w-10 h-10 " />
       </div>
       <div className=" flex items-center gap-4 justify-between ">
-        <div className="flex items-center gap-2 ">
-          <img className="w-5 h-5" src="/src/assets/profile.png" alt="" />
-          <h3>Register/Sign In</h3>
-          <img className="w-4 h-4" src="/src/assets/down-arrow.png" alt="" />
+        <div className="group relative">
+          <div className="flex items-center gap-2 cursor-pointer relative">
+            <img className="w-5 h-5" src="/src/assets/profile.png" alt="" />
+            <h3>Register/Sign In</h3>
+            <img
+              className="w-4 h-4 cursor-pointer group-hover:rotate-180 hover:duration-500"
+              src="/src/assets/down-arrow.png"
+              alt=""
+            />
+          </div>
+          <div className="absolute hidden flex-col  hover:visible group-hover:flex left-10 top-5 bg-white  w-40 h-25  shadow-2xl">
+            <h3 className=" cursor-pointer p-3">Register</h3>
+            <hr className="w-full " />
+            <h3 className="p-3 cursor-pointer">Sign In</h3>
+          </div>
         </div>
+
         <ul className="flex items-center gap-4 justify-between">
           <li>
             <a href="#Home">Home</a>
@@ -28,9 +40,34 @@ const Navbar = () => {
           <li>
             <a href="#Accessories">Accessories</a>
           </li>
-          <div className="flex items-center gap-2">
-            <h3>More</h3>
-            <img className="w-4 h-4" src="/src/assets/down-arrow.png" alt="" />
+
+          <div className="group relative flex items-center gap-2 cursor-pointer">
+            <div className="flex items-center gap-2  hover:duration-500">
+              <h3>More</h3>
+              <img
+                className="w-4 h-4 group-hover:rotate-180"
+                src="/src/assets/down-arrow.png"
+                alt=""
+              />
+            </div>
+            <div className="absolute hidden flex-col  hover:visible group-hover:flex left-1 top-5 bg-white w-40 shadow-2xl ">
+              <h3 className="p-2 cursor-pointer ">Handbags</h3>
+              <hr className="w-full" />
+              <h3 className="p-2 cursor-pointer ">Perfumes</h3>
+              <hr className="w-full" />
+              <h3 className='p-2 cursor-pointer'>Jewelries</h3>
+              <hr className="w-full" />
+              <h3 className='p-2 cursor-pointer'>Gym wears</h3>
+              <hr className="w-full" />
+              <h3 className='p-2 cursor-pointer'>Vintage wears</h3>
+              <hr className="w-full" />
+              <h3 className='p-2 cursor-pointer'>Sport wear</h3>
+              <hr className="w-full" />
+              <h3 className='p-2 cursor-pointer'>Pyjamas</h3>
+              <hr className="w-full" />
+              <h3 className='p-2 cursor-pointer'>Slippers</h3>
+              <hr className="w-full" />
+            </div>
           </div>
         </ul>
       </div>
