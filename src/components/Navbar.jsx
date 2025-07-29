@@ -4,13 +4,9 @@ const Navbar = () => {
   return (
     <div className="navbar flex justify-between items-center   text-black p-1 ">
       <div className="logo flex items-center ">
-        <img
-          src="/public/logo.png"
-          alt="logo"
-          className="w-10 h-10 "
-        />
+        <img src="/logo.png" alt="logo" className="w-10 h-10 " />
       </div>
-      <div className="flex items-center gap-4 justify-between ">
+      <div className=" flex items-center gap-4 justify-between ">
         <div className="flex items-center gap-2 ">
           <img className="w-5 h-5" src="/src/assets/profile.png" alt="" />
           <h3>Register/Sign In</h3>
@@ -39,7 +35,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div>
-        <div className="flex items-center border border-gray-500 rounded-l-2xl gap-2 rounded-r-2xl border-1 h-9">
+        <div className="flex items-center border border-gray-500 rounded-l-2xl gap-2 rounded-r-2xl h-9">
           <img className="w-5 h-4 pl-1" src="/src/assets/search.png " alt="" />
           <input className="w-30" type="text" placeholder="Search" />
           {/* <img
@@ -62,8 +58,57 @@ const Navbar = () => {
           </svg>
         </div>
       </div>
-      <div>search</div>
-      <div>currency</div>
+      <div className="flex items-center gap-2">
+        <img className="w-7 h-7" src="/src/assets/uk-flag.png" alt="" />
+        <h3>EN/Currency</h3>
+        <img className="w-4 h-4" src="/src/assets/down-arrow.png" alt="" />
+      </div>
+      <div>
+        <svg
+          className="w-12 h-12 bg-[#882BEC] p-1 rounded-full relative"
+          width="24"
+          height="25"
+          viewBox="0 0 24 25"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7.5 8.16999V7.19999C7.5 4.94999 9.31 2.73999 11.56 2.52999C14.24 2.26999 16.5 4.37999 16.5 7.00999V8.38999"
+            stroke="white"
+            stroke-width="1.5"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M8.99983 22.5H14.9998C19.0198 22.5 19.7398 20.89 19.9498 18.93L20.6998 12.93C20.9698 10.49 20.2698 8.5 15.9998 8.5H7.99983C3.72983 8.5 3.02983 10.49 3.29983 12.93L4.04983 18.93C4.25983 20.89 4.97983 22.5 8.99983 22.5Z"
+            stroke="white"
+            stroke-width="1.5"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M15.4955 12.5H15.5045"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M8.49451 12.5H8.50349"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <h3 className="bg-[#FF0000] text-white rounded-full w-5 h-5 flex items-center justify-center absolute top-3 right-4">
+          2
+        </h3>
+
+        {/* <img className="w-7 h-7" src="/src/assets/cart.png" alt="" /> */}
+      </div>
     </div>
   );
 }
